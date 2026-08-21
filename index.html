@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHALMIK — [公司定位/标语占位]</title>
+<meta name="description" content="CHALMIK. [一句话描述你的业务占位]">
+<meta property="og:title" content="CHALMIK">
+<meta property="og:description" content="[业务一句话占位]">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0d1117; --ink2:#161b22; --ink3:#1f2630;
+    --amber:#e8a33d; --amber-light:#f6c76a; --amber-deep:#c07f1f;
+    --paper:#f7f7f4; --text:#3d4a5c; --line:rgba(255,255,255,.08);
+    --grad-amber:linear-gradient(135deg,#f6c76a 0%,#e8a33d 55%,#c07f1f 100%);
+    --grad-hero:linear-gradient(155deg,#0a0d12 0%,#10151d 45%,#18202c 80%,#1f2a3a 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,Roboto,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.75;overflow-x:hidden}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+  .container{max-width:1140px;margin:0 auto;padding:0 24px}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%}
+
+  /* ===== NAV ===== */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,13,18,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:all .35s}
+  nav.scrolled{background:rgba(8,11,16,.94);box-shadow:0 10px 34px rgba(0,0,0,.4)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo{color:#fff;font-size:23px;font-weight:800;letter-spacing:3px}
+  .logo span{background:var(--grad-amber);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .nav-links{display:flex;gap:32px;align-items:center}
+  .nav-links a{color:rgba(255,255,255,.8);font-size:14.5px;font-weight:500;transition:color .3s;position:relative}
+  .nav-links a:not(.nav-cta)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--grad-amber);border-radius:2px;transition:width .3s}
+  .nav-links a:not(.nav-cta):hover{color:#fff}
+  .nav-links a:not(.nav-cta):hover::after{width:100%}
+  .nav-cta{background:var(--grad-amber);color:#0d1117!important;padding:11px 22px;border-radius:50px;font-weight:700;font-size:14px;box-shadow:0 6px 20px rgba(232,163,61,.3);transition:all .3s}
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(232,163,61,.45)}
+  .menu-btn{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;background:var(--grad-hero);color:#fff;padding:190px 0 160px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(700px 420px at 82% 8%,rgba(232,163,61,.14),transparent 60%),
+    radial-gradient(520px 380px at 8% 88%,rgba(232,163,61,.08),transparent 60%)}
+  .hero .container{position:relative;z-index:2}
+  .hero-tag{display:inline-block;color:var(--amber-light);font-size:13px;font-weight:600;letter-spacing:4px;text-transform:uppercase;border:1px solid rgba(246,199,106,.35);padding:8px 18px;border-radius:50px;margin-bottom:26px}
+  .hero h1{font-size:64px;line-height:1.08;font-weight:800;letter-spacing:1px;margin-bottom:22px}
+  .hero h1 em{font-style:normal;background:var(--grad-amber);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{font-size:19px;color:rgba(255,255,255,.72);max-width:640px;margin-bottom:38px}
+  .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 34px;border-radius:50px;font-weight:700;font-size:15px;transition:all .3s}
+  .btn-primary{background:var(--grad-amber);color:#0d1117;box-shadow:0 8px 26px rgba(232,163,61,.35)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(232,163,61,.5)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.08);border-color:#fff}
+
+  /* ===== SECTIONS ===== */
+  section{padding:100px 0}
+  .sec-label{color:var(--amber-deep);font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px}
+  .sec-title{font-size:40px;color:var(--ink);line-height:1.2;margin-bottom:18px}
+  .sec-sub{font-size:17px;max-width:700px;margin-bottom:52px}
+  .bg-light{background:#fff}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .about-grid h3{font-size:26px;color:var(--ink);margin-bottom:18px}
+  .about-grid p{font-size:16.5px;margin-bottom:16px}
+  .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  .stat{background:#fff;border:1px solid #e6e6e0;border-radius:14px;padding:22px 18px;text-align:center;transition:all .3s}
+  .stat:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(13,17,23,.08)}
+  .stat b{display:block;font-family:'Playfair Display',serif;font-size:32px;color:var(--ink)}
+  .stat span{font-size:13px;color:var(--text)}
+
+  /* Services */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .svc{background:#fff;border:1px solid #e6e6e0;border-radius:16px;padding:38px 30px;transition:all .35s;position:relative;overflow:hidden}
+  .svc::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-amber);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+  .svc:hover{transform:translateY(-6px);box-shadow:0 20px 46px rgba(13,17,23,.1)}
+  .svc:hover::before{transform:scaleX(1)}
+  .svc .ico{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,rgba(232,163,61,.16),rgba(232,163,61,.05));display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:20px}
+  .svc h3{font-size:21px;color:var(--ink);margin-bottom:12px}
+  .svc p{font-size:15px}
+
+  /* Approach */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .step{position:relative;padding:34px 26px;background:var(--ink);border-radius:16px;color:#fff}
+  .step .num{font-family:'Playfair Display',serif;font-size:44px;background:var(--grad-amber);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;display:block;margin-bottom:14px}
+  .step h3{font-size:18px;margin-bottom:10px}
+  .step p{font-size:14px;color:rgba(255,255,255,.65)}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .contact-info h3{font-size:24px;color:var(--ink);margin-bottom:18px}
+  .contact-info p{font-size:16px;margin-bottom:12px}
+  .contact-info .big{font-size:19px;font-weight:600;color:var(--ink)}
+  form{background:#fff;border:1px solid #e6e6e0;border-radius:16px;padding:36px;box-shadow:0 14px 40px rgba(13,17,23,.06)}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:7px}
+  .field input,.field textarea,.field select{width:100%;padding:13px 16px;border:1.5px solid #e0e0da;border-radius:10px;font-size:15px;font-family:inherit;color:var(--ink);background:var(--paper);transition:border .3s}
+  .field input:focus,.field textarea:focus{border-color:var(--amber);outline:none}
+  form .btn{width:100%;text-align:center;border:none;cursor:pointer;font-size:15.5px}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.6);padding:52px 0 40px;font-size:14px}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .foot .logo{font-size:20px}
+  footer a{color:rgba(255,255,255,.75)}
+  footer a:hover{color:var(--amber-light)}
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width:960px){
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .hero h1{font-size:44px}
+  }
+  @media(max-width:640px){
+    .nav-links{position:fixed;top:74px;left:0;right:0;background:rgba(8,11,16,.98);flex-direction:column;padding:26px 24px;gap:20px;display:none;border-bottom:1px solid var(--line)}
+    .nav-links.open{display:flex}
+    .menu-btn{display:block}
+    .svc-grid,.steps,.about-stats{grid-template-columns:1fr}
+    .hero{padding:150px 0 120px}
+    .hero h1{font-size:36px}
+    .sec-title{font-size:31px}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">CHAL<span>MIK</span></a>
+    <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="container">
+    <span class="hero-tag">[行业/定位占位 — e.g. Trading · Advisory · Ventures]</span>
+    <h1>CHALMIK<em>.</em><br>[主标语占位 — e.g. Precision in every detail]</h1>
+    <p>[一句话业务描述占位 — 2-3 句话，说明你做什么、为谁做、为什么靠谱。这是全站最重要的文案，Boss 请优先填这个。]</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="#about" class="btn btn-ghost">Learn More</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sec-label">About</div>
+    <div class="about-grid">
+      <div>
+        <h2 class="sec-title">[关于我们标题占位]</h2>
+        <h3>[副标题占位]</h3>
+        <p>[公司介绍占位 — 写清：成立时间（2018）、在哪里（布里斯班）、做什么、服务谁。真实信息比漂亮话重要。]</p>
+        <p>[第二段占位 — 差异化：为什么客户选你们。]</p>
+        <div class="about-stats">
+          <div class="stat"><b>[X]</b><span>[年份/数字占位]</span></div>
+          <div class="stat"><b>[X]</b><span>[数字占位]</span></div>
+          <div class="stat"><b>[X]</b><span>[数字占位]</span></div>
+        </div>
+      </div>
+      <div style="background:linear-gradient(150deg,var(--ink) 0%,var(--ink3) 100%);border-radius:20px;min-height:360px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);font-size:15px;letter-spacing:2px">[ 图片占位 ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-light">
+  <div class="container">
+    <div class="sec-label">What We Do</div>
+    <h2 class="sec-title">[服务标题占位]</h2>
+    <p class="sec-sub">[一句话服务概述占位]</p>
+    <div class="svc-grid">
+      <div class="svc"><div class="ico">◈</div><h3>[服务1名称占位]</h3><p>[服务1说明占位 — 2 句话：提供什么、解决什么问题。]</p></div>
+      <div class="svc"><div class="ico">◈</div><h3>[服务2名称占位]</h3><p>[服务2说明占位]</p></div>
+      <div class="svc"><div class="ico">◈</div><h3>[服务3名称占位]</h3><p>[服务3说明占位]</p></div>
+      <div class="svc"><div class="ico">◈</div><h3>[服务4名称占位]</h3><p>[服务4说明占位]</p></div>
+      <div class="svc"><div class="ico">◈</div><h3>[服务5名称占位]</h3><p>[服务5说明占位]</p></div>
+      <div class="svc"><div class="ico">◈</div><h3>[服务6名称占位]</h3><p>[服务6说明占位]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach">
+  <div class="container">
+    <div class="sec-label">How We Work</div>
+    <h2 class="sec-title">[流程标题占位]</h2>
+    <p class="sec-sub">[流程概述占位]</p>
+    <div class="steps">
+      <div class="step"><span class="num">01</span><h3>[步骤1]</h3><p>[说明占位]</p></div>
+      <div class="step"><span class="num">02</span><h3>[步骤2]</h3><p>[说明占位]</p></div>
+      <div class="step"><span class="num">03</span><h3>[步骤3]</h3><p>[说明占位]</p></div>
+      <div class="step"><span class="num">04</span><h3>[步骤4]</h3><p>[说明占位]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-light">
+  <div class="container">
+    <div class="sec-label">Contact</div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2 class="sec-title">Let’s talk.</h2>
+        <p class="big">[电话占位 — e.g. 0400 000 000]</p>
+        <p class="big">[邮箱占位 — e.g. info@chalmik.com]</p>
+        <p>[地址占位 — e.g. Brisbane QLD 4000, Australia]</p>
+        <p style="margin-top:22px;font-size:15px">[营业时间占位 — e.g. Mon–Fri 9:00–17:00]</p>
+      </div>
+      <form id="cform" onsubmit="return sendForm(event)">
+        <div class="field"><label>Name *</label><input name="name" required placeholder="Your name"></div>
+        <div class="field"><label>Email *</label><input name="email" type="email" required placeholder="you@email.com"></div>
+        <div class="field"><label>Phone</label><input name="phone" placeholder="0400 000 000"></div>
+        <div class="field"><label>How can we help?</label><textarea name="message" rows="5" required placeholder="Tell us about your enquiry…"></textarea></div>
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <span class="logo">CHAL<span>MIK</span></span>
+    <span>© 2026 CHALMIK. [公司全称占位 — e.g. CHALMIK PTY LTD ABN 82 623 889 323]</span>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40)});
+  function sendForm(e){
+    e.preventDefault();
+    var f=e.target;
+    var data='name='+encodeURIComponent(f.name.value)+'&email='+encodeURIComponent(f.email.value)+'&phone='+encodeURIComponent(f.phone.value)+'&message='+encodeURIComponent(f.message.value);
+    // TODO: 接入表单后端（Formspree/Cloudflare Workers 等）后替换此地址
+    alert('表单已收集（演示模式）。正式上线前接入邮件通知。');
+    return false;
+  }
+</script>
+</body>
+</html>
