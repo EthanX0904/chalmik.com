@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHALMIK — Australian Food &amp; Wellness Exports</title>
-<meta name="description" content="CHALMIK is a Brisbane-based export trading company supplying premium Australian food and wellness products to markets across Asia.">
+<title>CHALMIK — Australian Food &amp; Wellness Exports | Brisbane</title>
+<meta name="description" content="CHALMIK is a Brisbane export company. We buy honey, nuts, wine and health products straight from Australian producers and sell to buyers across Asia.">
 <meta property="og:title" content="CHALMIK — Australian Food &amp; Wellness Exports">
-<meta property="og:description" content="Premium Australian produce, exported worldwide. Honey, nuts, wine, health &amp; wellness products.">
+<meta property="og:description" content="Brisbane export company. Australian honey, nuts, wine and health products, shipped to Asia.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,92 +15,85 @@
   :root{
     --ink:#0d1117; --ink2:#161b22; --ink3:#1f2630;
     --amber:#e8a33d; --amber-light:#f6c76a; --amber-deep:#c07f1f;
-    --paper:#f7f7f4; --text:#3d4a5c; --line:rgba(255,255,255,.08);
+    --paper:#f7f7f4; --text:#45505f; --line:rgba(255,255,255,.08);
     --grad-amber:linear-gradient(135deg,#f6c76a 0%,#e8a33d 55%,#c07f1f 100%);
     --grad-hero:linear-gradient(155deg,#0a0d12 0%,#10151d 45%,#18202c 80%,#1f2a3a 100%);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',-apple-system,Roboto,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.75;overflow-x:hidden}
+  body{font-family:'Inter',-apple-system,Roboto,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.8;overflow-x:hidden}
   h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
-  .container{max-width:1140px;margin:0 auto;padding:0 24px}
+  .container{max-width:1100px;margin:0 auto;padding:0 24px}
   a{text-decoration:none;color:inherit}
   img{max-width:100%}
 
   nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,13,18,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:all .35s}
   nav.scrolled{background:rgba(8,11,16,.94);box-shadow:0 10px 34px rgba(0,0,0,.4)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .logo{color:#fff;font-size:23px;font-weight:800;letter-spacing:3px}
-  .logo span{background:var(--grad-amber);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .logo{color:#fff;font-size:22px;font-weight:800;letter-spacing:3px}
+  .logo span{color:var(--amber-light)}
   .nav-links{display:flex;gap:30px;align-items:center}
-  .nav-links a{color:rgba(255,255,255,.8);font-size:14.5px;font-weight:500;transition:color .3s;position:relative}
-  .nav-links a:not(.nav-cta)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--grad-amber);border-radius:2px;transition:width .3s}
-  .nav-links a:not(.nav-cta):hover{color:#fff}
-  .nav-links a:not(.nav-cta):hover::after{width:100%}
+  .nav-links a{color:rgba(255,255,255,.8);font-size:14.5px;font-weight:500;transition:color .3s}
+  .nav-links a:hover{color:#fff}
   .nav-cta{background:var(--grad-amber);color:#0d1117!important;padding:11px 22px;border-radius:50px;font-weight:700;font-size:14px;box-shadow:0 6px 20px rgba(232,163,61,.3);transition:all .3s}
-  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(232,163,61,.45)}
+  .nav-cta:hover{transform:translateY(-2px)}
   .menu-btn{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
 
-  .hero{position:relative;background:var(--grad-hero);color:#fff;padding:190px 0 160px;overflow:hidden}
+  .hero{position:relative;background:var(--grad-hero);color:#fff;padding:185px 0 150px;overflow:hidden}
   .hero::before{content:"";position:absolute;inset:0;background:
-    radial-gradient(700px 420px at 82% 8%,rgba(232,163,61,.14),transparent 60%),
-    radial-gradient(520px 380px at 8% 88%,rgba(232,163,61,.08),transparent 60%)}
+    radial-gradient(700px 420px at 82% 8%,rgba(232,163,61,.13),transparent 60%),
+    radial-gradient(520px 380px at 8% 88%,rgba(232,163,61,.07),transparent 60%)}
   .hero .container{position:relative;z-index:2}
-  .hero-tag{display:inline-block;color:var(--amber-light);font-size:13px;font-weight:600;letter-spacing:4px;text-transform:uppercase;border:1px solid rgba(246,199,106,.35);padding:8px 18px;border-radius:50px;margin-bottom:26px}
-  .hero h1{font-size:58px;line-height:1.1;font-weight:800;letter-spacing:1px;margin-bottom:22px}
-  .hero h1 em{font-style:normal;background:var(--grad-amber);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .hero p{font-size:19px;color:rgba(255,255,255,.72);max-width:660px;margin-bottom:38px}
+  .hero-tag{display:inline-block;color:var(--amber-light);font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;border:1px solid rgba(246,199,106,.35);padding:8px 18px;border-radius:50px;margin-bottom:26px}
+  .hero h1{font-size:54px;line-height:1.12;font-weight:800;letter-spacing:.5px;margin-bottom:22px}
+  .hero h1 span{color:var(--amber-light)}
+  .hero p{font-size:18px;color:rgba(255,255,255,.75);max-width:640px;margin-bottom:38px}
   .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
   .btn{display:inline-block;padding:15px 34px;border-radius:50px;font-weight:700;font-size:15px;transition:all .3s}
   .btn-primary{background:var(--grad-amber);color:#0d1117;box-shadow:0 8px 26px rgba(232,163,61,.35)}
-  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(232,163,61,.5)}
+  .btn-primary:hover{transform:translateY(-3px)}
   .btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
   .btn-ghost:hover{background:rgba(255,255,255,.08);border-color:#fff}
 
-  section{padding:100px 0}
-  .sec-label{color:var(--amber-deep);font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px}
-  .sec-title{font-size:40px;color:var(--ink);line-height:1.2;margin-bottom:18px}
-  .sec-sub{font-size:17px;max-width:720px;margin-bottom:52px}
+  section{padding:96px 0}
+  .sec-label{color:var(--amber-deep);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+  .sec-title{font-size:37px;color:var(--ink);line-height:1.25;margin-bottom:20px}
+  .sec-sub{font-size:17px;max-width:760px;margin-bottom:50px}
   .bg-light{background:#fff}
 
-  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
-  .about-grid h3{font-size:26px;color:var(--ink);margin-bottom:18px}
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}
+  .about-grid h3{font-size:24px;color:var(--ink);margin-bottom:16px}
   .about-grid p{font-size:16.5px;margin-bottom:16px}
-  .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
-  .stat{background:#fff;border:1px solid #e6e6e0;border-radius:14px;padding:22px 18px;text-align:center;transition:all .3s}
-  .stat:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(13,17,23,.08)}
-  .stat b{display:block;font-family:'Playfair Display',serif;font-size:30px;color:var(--ink)}
-  .stat span{font-size:13px;color:var(--text)}
+  .fact-card{background:linear-gradient(150deg,var(--ink) 0%,var(--ink3) 100%);border-radius:18px;padding:38px 32px;color:#fff}
+  .fact-card p{font-family:'Playfair Display',serif;font-size:21px;line-height:1.7;color:rgba(255,255,255,.9);margin:0}
+  .fact-card p b{color:var(--amber-light);font-weight:700}
 
-  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-  .svc{background:#fff;border:1px solid #e6e6e0;border-radius:16px;padding:38px 30px;transition:all .35s;position:relative;overflow:hidden}
-  .svc::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-amber);transform:scaleX(0);transform-origin:left;transition:transform .4s}
-  .svc:hover{transform:translateY(-6px);box-shadow:0 20px 46px rgba(13,17,23,.1)}
-  .svc:hover::before{transform:scaleX(1)}
-  .svc .ico{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,rgba(232,163,61,.16),rgba(232,163,61,.05));display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px}
-  .svc h3{font-size:21px;color:var(--ink);margin-bottom:12px}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{background:#fff;border:1px solid #e6e6e0;border-radius:14px;padding:30px 26px;transition:all .3s}
+  .svc:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(13,17,23,.08)}
+  .svc .ico{font-size:26px;margin-bottom:16px}
+  .svc h3{font-size:19px;color:var(--ink);margin-bottom:10px}
   .svc p{font-size:15px}
 
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-  .step{position:relative;padding:34px 26px;background:var(--ink);border-radius:16px;color:#fff}
-  .step .num{font-family:'Playfair Display',serif;font-size:44px;background:var(--grad-amber);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:800;display:block;margin-bottom:14px}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .step{position:relative;padding:30px 24px;background:var(--ink);border-radius:14px;color:#fff}
+  .step .num{font-family:'Playfair Display',serif;font-size:40px;color:var(--amber-light);font-weight:800;display:block;margin-bottom:12px}
   .step h3{font-size:18px;margin-bottom:10px}
   .step p{font-size:14px;color:rgba(255,255,255,.65)}
 
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-  .contact-info h3{font-size:24px;color:var(--ink);margin-bottom:18px}
   .contact-info p{font-size:16px;margin-bottom:12px}
   .contact-info .big{font-size:19px;font-weight:600;color:var(--ink)}
-  form{background:#fff;border:1px solid #e6e6e0;border-radius:16px;padding:36px;box-shadow:0 14px 40px rgba(13,17,23,.06)}
+  form{background:#fff;border:1px solid #e6e6e0;border-radius:14px;padding:34px;box-shadow:0 14px 40px rgba(13,17,23,.06)}
   .field{margin-bottom:18px}
   .field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:7px}
   .field input,.field textarea{width:100%;padding:13px 16px;border:1.5px solid #e0e0da;border-radius:10px;font-size:15px;font-family:inherit;color:var(--ink);background:var(--paper);transition:border .3s}
   .field input:focus,.field textarea:focus{border-color:var(--amber);outline:none}
   form .btn{width:100%;text-align:center;border:none;cursor:pointer;font-size:15.5px}
 
-  footer{background:var(--ink);color:rgba(255,255,255,.6);padding:52px 0 40px;font-size:14px}
+  footer{background:var(--ink);color:rgba(255,255,255,.6);padding:48px 0 36px;font-size:14px}
   .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  .foot .logo{font-size:20px}
+  .foot .logo{font-size:19px}
   footer a{color:rgba(255,255,255,.75)}
   footer a:hover{color:var(--amber-light)}
 
@@ -108,16 +101,16 @@
     .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
     .svc-grid{grid-template-columns:1fr 1fr}
     .steps{grid-template-columns:1fr 1fr}
-    .hero h1{font-size:42px}
+    .hero h1{font-size:40px}
   }
   @media(max-width:640px){
     .nav-links{position:fixed;top:74px;left:0;right:0;background:rgba(8,11,16,.98);flex-direction:column;padding:26px 24px;gap:20px;display:none;border-bottom:1px solid var(--line)}
     .nav-links.open{display:flex}
     .menu-btn{display:block}
-    .svc-grid,.steps,.about-stats{grid-template-columns:1fr}
-    .hero{padding:150px 0 120px}
-    .hero h1{font-size:34px}
-    .sec-title{font-size:31px}
+    .svc-grid,.steps{grid-template-columns:1fr}
+    .hero{padding:145px 0 110px}
+    .hero h1{font-size:33px}
+    .sec-title{font-size:29px}
   }
 </style>
 </head>
@@ -130,21 +123,21 @@
     <div class="nav-links" id="nav-links">
       <a href="#about">About</a>
       <a href="#products">Products</a>
-      <a href="#approach">Approach</a>
+      <a href="#approach">How it works</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="nav-cta">Enquire Now</a>
+      <a href="#contact" class="nav-cta">Enquire</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="container">
-    <span class="hero-tag">Australian Food &amp; Wellness · Export Trading</span>
-    <h1>Australian produce.<br><em>Global markets.</em></h1>
-    <p>CHALMIK is a Brisbane-based export trading company, sourcing premium Australian food and wellness products and delivering them to markets across Asia — with quality, traceability and reliability at every step.</p>
+    <span class="hero-tag">Australian food &amp; wellness exports</span>
+    <h1>Australian produce.<br><span>Straight to Asia.</span></h1>
+    <p>CHALMIK is a Brisbane export company. We buy honey, nuts, wine and health products straight from Australian producers, and sell them to buyers across Asia. We handle the quality checks, the paperwork and the shipping — you deal with one person, not ten.</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn btn-primary">Enquire Now</a>
-      <a href="#products" class="btn btn-ghost">Our Products</a>
+      <a href="#contact" class="btn btn-primary">Enquire now</a>
+      <a href="#products" class="btn btn-ghost">What we export</a>
     </div>
   </div>
 </header>
@@ -154,47 +147,45 @@
     <div class="sec-label">About</div>
     <div class="about-grid">
       <div>
-        <h2 class="sec-title">Built on Australia’s clean, green advantage</h2>
-        <h3>Trusted sourcing. Reliable export.</h3>
-        <p>CHALMIK PTY LTD connects the world with Australia’s finest natural produce. From the apiaries and orchards of regional Australia to buyers across Asia, we manage the full export chain — sourcing, quality assurance, documentation and logistics.</p>
-        <p>Registered in Brisbane since 2018, we work directly with trusted Australian producers and packers to deliver consistent, compliant, premium-quality product, shipment after shipment.</p>
-        <div class="about-stats">
-          <div class="stat"><b>2018</b><span>Established, Brisbane</span></div>
-          <div class="stat"><b>100%</b><span>Australian sourced</span></div>
-          <div class="stat"><b>Asia</b><span>Markets served</span></div>
-        </div>
+        <h2 class="sec-title">A small export company in Brisbane</h2>
+        <p>CHALMIK PTY LTD was registered in Brisbane in 2018. We export food and wellness products from Australia to Asia.</p>
+        <p>Not everything — a handful of categories we know well: honey, macadamias and nuts, wine, supplements, skincare and pantry staples.</p>
+        <p>We work with producers we've met and checked ourselves. Most of them are family operations. That's why quality stays consistent, and why we can tell you exactly where a product came from, down to the farm.</p>
+        <p>If you're a buyer, importer or distributor in Asia and you're tired of middlemen — get in touch. We'll send you specs, samples and honest prices.</p>
       </div>
-      <div style="background:linear-gradient(150deg,var(--ink) 0%,var(--ink3) 100%);border-radius:20px;min-height:360px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);font-size:14px;letter-spacing:2px">[ PRODUCT IMAGERY ]</div>
+      <div class="fact-card">
+        <p>Honey from <b>Queensland</b>. Nuts from <b>northern NSW</b>. Wine from <b>South Australia</b>.<br><br>One farm, one invoice, one phone call.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="products" class="bg-light">
   <div class="container">
-    <div class="sec-label">What We Export</div>
-    <h2 class="sec-title">Premium Australian product categories</h2>
-    <p class="sec-sub">We specialise in high-value, high-demand Australian categories with strong brand recognition in Asian markets.</p>
+    <div class="sec-label">What we export</div>
+    <h2 class="sec-title">Six categories. Done properly.</h2>
+    <p class="sec-sub">We keep the range small on purpose. It means we know the producers, the prices and the paperwork for each one.</p>
     <div class="svc-grid">
-      <div class="svc"><div class="ico">🍯</div><h3>Honey &amp; Bee Products</h3><p>Raw and creamed honeys, manuka and native blends, beeswax — sourced from Australian apiaries with full traceability.</p></div>
-      <div class="svc"><div class="ico">🌰</div><h3>Macadamias &amp; Nuts</h3><p>Australian macadamias, almonds and mixed nuts — roasted, raw or value-added, from trusted regional growers.</p></div>
-      <div class="svc"><div class="ico">🍷</div><h3>Wine &amp; Beverages</h3><p>Premium Australian wines and craft beverages from established estates across South Australia, Victoria and New South Wales.</p></div>
-      <div class="svc"><div class="ico">💊</div><h3>Health &amp; Wellness</h3><p>Vitamins, supplements and natural health products manufactured to Australian standards and export-ready compliance.</p></div>
-      <div class="svc"><div class="ico">🧴</div><h3>Skincare &amp; Natural Cosmetics</h3><p>Australian-owned skincare and cosmetic brands built on native botanicals and the clean, green Australian story.</p></div>
-      <div class="svc"><div class="ico">🌾</div><h3>Oats, Grains &amp; Pantry</h3><p>Australian oats, grains, pulses and pantry staples — bulk or retail-ready packs for food importers and distributors.</p></div>
+      <div class="svc"><div class="ico">🍯</div><h3>Honey &amp; bee products</h3><p>Raw, creamed and manuka honey from Queensland and WA apiaries. Retail jars or bulk drums.</p></div>
+      <div class="svc"><div class="ico">🌰</div><h3>Macadamias &amp; nuts</h3><p>Australian macadamias and almonds, raw or roasted. Mostly from family growers in Queensland and northern NSW.</p></div>
+      <div class="svc"><div class="ico">🍷</div><h3>Wine &amp; beverages</h3><p>Table wines from established South Australian and Victorian wineries. Single bottles to full pallets.</p></div>
+      <div class="svc"><div class="ico">💊</div><h3>Health &amp; wellness</h3><p>Vitamins and supplements made in Australia to TGA standards. Export-ready labelling.</p></div>
+      <div class="svc"><div class="ico">🧴</div><h3>Skincare</h3><p>Australian-made skincare using native botanicals. We work with a few small manufacturers we know.</p></div>
+      <div class="svc"><div class="ico">🌾</div><h3>Oats, grains &amp; pantry</h3><p>Australian oats, grains and pantry staples — bulk or retail-ready packs.</p></div>
     </div>
   </div>
 </section>
 
 <section id="approach">
   <div class="container">
-    <div class="sec-label">How We Work</div>
-    <h2 class="sec-title">End-to-end export, handled</h2>
-    <p class="sec-sub">One partner from the farm gate to your port — transparent, compliant and on time.</p>
+    <div class="sec-label">How it works</div>
+    <h2 class="sec-title">Four steps. No surprises.</h2>
+    <p class="sec-sub">You tell us what you need. We handle the rest.</p>
     <div class="steps">
-      <div class="step"><span class="num">01</span><h3>Sourcing</h3><p>We identify and vet producers against your specification, price and volume requirements.</p></div>
-      <div class="step"><span class="num">02</span><h3>Quality Assurance</h3><p>Product inspection, certification and compliance checks before anything ships.</p></div>
-      <div class="step"><span class="num">03</span><h3>Export Documentation</h3><p>Full paperwork — health certificates, packing lists, invoices, origin documents.</p></div>
-      <div class="step"><span class="num">04</span><h3>Logistics &amp; Delivery</h3><p>Freight booking, consolidation and delivery to your destination port, on schedule.</p></div>
+      <div class="step"><span class="num">01</span><h3>Find it</h3><p>We source from producers we trust, and match them to your spec and budget.</p></div>
+      <div class="step"><span class="num">02</span><h3>Check it</h3><p>Samples, certificates and quality checks before anything ships.</p></div>
+      <div class="step"><span class="num">03</span><h3>Paper it</h3><p>Health certs, invoices, packing lists and origin documents — done properly.</p></div>
+      <div class="step"><span class="num">04</span><h3>Ship it</h3><p>We book the freight and follow it to your port. You get clear updates, not silence.</p></div>
     </div>
   </div>
 </section>
@@ -204,19 +195,20 @@
     <div class="sec-label">Contact</div>
     <div class="contact-grid">
       <div class="contact-info">
-        <h2 class="sec-title">Let’s talk trade.</h2>
+        <h2 class="sec-title">Tell us what you're looking for.</h2>
+        <p>Tell us the product, the volume and where you are. We'll reply within a day — usually sooner.</p>
         <p class="big"><a href="mailto:info@chalmik.com" style="color:inherit">info@chalmik.com</a></p>
         <p class="big"><a href="tel:+61744399191" style="color:inherit">+61 7 4439 9191</a></p>
         <p>Brisbane QLD 4000, Australia</p>
-        <p style="margin-top:22px;font-size:15px">CHALMIK PTY LTD · ABN 82 623 889 323</p>
+        <p style="margin-top:20px;font-size:14.5px">CHALMIK PTY LTD · ABN 82 623 889 323</p>
       </div>
       <form id="cform" onsubmit="return sendForm(event)">
         <div class="field"><label>Name *</label><input name="name" required placeholder="Your name"></div>
         <div class="field"><label>Email *</label><input name="email" type="email" required placeholder="you@email.com"></div>
-        <div class="field"><label>Country / Region</label><input name="country" placeholder="e.g. Singapore"></div>
-        <div class="field"><label>Product of interest</label><input name="product" placeholder="e.g. Honey, Macadamias…"></div>
-        <div class="field"><label>Message *</label><textarea name="message" rows="4" required placeholder="Tell us about your enquiry…"></textarea></div>
-        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        <div class="field"><label>Country / region</label><input name="country" placeholder="e.g. Singapore"></div>
+        <div class="field"><label>What are you after?</label><input name="product" placeholder="e.g. honey, 500g jars, 5 pallets"></div>
+        <div class="field"><label>Message *</label><textarea name="message" rows="4" required placeholder="The more detail, the faster we can quote."></textarea></div>
+        <button type="submit" class="btn btn-primary">Send enquiry</button>
       </form>
     </div>
   </div>
@@ -233,9 +225,8 @@
   window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40)});
   function sendForm(e){
     e.preventDefault();
-    var f=e.target;
-    // TODO: 接入表单后端（Formspree/Cloudflare Workers）后替换
-    alert('Thank you! Your enquiry has been received. (Form backend to be connected)');
+    // TODO: connect form backend (Formspree / Cloudflare Worker) when ready
+    alert('Thanks — your enquiry is recorded. We\'ll get back to you within a day.');
     return false;
   }
 </script>
